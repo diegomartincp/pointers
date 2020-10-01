@@ -17,7 +17,7 @@ void eQ(int x){ //Donde x es la información que almacenamos en nuestra estructu
     if(f==NULL){    //Si está vacía
         vox *k = new vox;
         k->v=x;
-        k->sgt;
+        k->sgt=NULL;
     }
 }
 

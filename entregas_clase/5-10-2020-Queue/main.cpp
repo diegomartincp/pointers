@@ -2,7 +2,7 @@
 using namespace std;
 
 
-struct date{
+struct date{ //Creamos una estructura llamada "date" donde se almacena la fecha de nacimiento
     int dia;
     int mes;
     int ano;
@@ -15,10 +15,10 @@ struct box {
 };
 
 
-box *i,*f=NULL;
+box *i,*f=NULL; //Creamos el inicio, el final y el auxiliar.
 box *a;
 
-void eQ(char d, int b, date c){
+void eQ(char d, int b, date c){ //Método para encolar
     if(f==NULL){
         box *a=new box;
         a->name=d;
@@ -36,7 +36,7 @@ void eQ(char d, int b, date c){
         f=a;
     }
 }
-void dQ(){
+void dQ(){ //Método para desencolar
     if(i==NULL)
         cout<<"Queue vacia";
     else if (i->sgt==NULL){
@@ -50,7 +50,7 @@ void dQ(){
     }
 }
 
-void prt() {
+void prt() { //Método para imprimir
     a = i;
     if (i == NULL)
         cout << "Vacia nada que imprimir";

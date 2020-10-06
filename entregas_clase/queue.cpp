@@ -2,7 +2,7 @@
 using namespace std;
 
 struct box {
-    String name;
+    char name;
     int exp;
     date cumple;
     box *sgt;
@@ -16,7 +16,7 @@ struct date{
 box *i,*f=NULL;
 box *a;
 
-void eQ(String a, int b, date c){
+void eQ(char a, int b, date c){
     if(f==NULL){
         box *a=new box;
         a->name=a;

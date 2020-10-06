@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/diegomartinc/CLionProjects/pointers/entregas_clase/5-10-2020 -Queue
+# Install script for directory: C:/Users/diegomartinc/CLionProjects/pointers/entregas_clase/5-10-2020-Queue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

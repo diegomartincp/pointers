@@ -55,8 +55,13 @@ void prt() {
     if (i == NULL)
         cout << "Vacia nada que imprimir";
     else
-        while (a != NULL)
-            cout << a->name << " -> ", a = a->sgt;
+        while (a != NULL){
+            cout << "\n"<<"Nombre: " << a->name << "\n";
+            cout << "Expediente: " << a->exp << "\n";
+            cout << "Fecha de nacimiento: "<< a->cumple.dia <<"/"<< a->cumple.mes <<"/"<< a->cumple.ano <<  " -> ";
+            a = a->sgt;
+        }
+
 }
 int main(){
     int op, b;
@@ -67,11 +72,11 @@ int main(){
         cout<<"\n Elija ppcion  ?: ",cin>>op;
         switch (op){
             case 1:
-                cout<<"Ingresa el valor del nombre a insertar en el Stack : ??  ",cin>>d;
-                cout<<"Ingresa el valor a del expediente insertar en el Stack : ??  ",cin>>b;
-                cout<<"Ingresa el valor del día a insertar en el Stack : ??  ",cin>>c.dia;
-                cout<<"Ingresa el valor del mes a insertar en el Stack : ??  ",cin>>c.mes;
-                cout<<"Ingresa el valor del año a insertar en el Stack : ??  ",cin>>c.ano;
+                cout<<"Ingresa el valor del NOMBRE a insertar en el Stack : ??  ",cin>>d;
+                cout<<"Ingresa el valor a del EXPEDIENTE a insertar en el Stack : ??  ",cin>>b;
+                cout<<"Ingresa el valor del DIA a insertar en el Stack : ??  ",cin>>c.dia;
+                cout<<"Ingresa el valor del MES a insertar en el Stack : ??  ",cin>>c.mes;
+                cout<<"Ingresa el valor del ANO a insertar en el Stack : ??  ",cin>>c.ano;
 
                 eQ(d,b,c);
                 break;

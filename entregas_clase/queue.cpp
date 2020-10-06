@@ -16,17 +16,17 @@ struct date{
 box *i,*f=NULL;
 box *a;
 
-void eQ(char a, int b, date c){
+void eQ(char d, int b, date c){
     if(f==NULL){
         box *a=new box;
-        a->name=a;
+        a->name=d;
         a->exp=b;
         a->date=c;
         a->sgt=NULL;
         f=a;i=f;
     }else{
        box *a= new box;
-       f->sgt=a;
+       f->sgt=d;
        a->name=a;
        a->exp=b;
        a->date=c;

@@ -26,7 +26,7 @@ void eQ(char d, int b, date c){ //Método para encolar
         a->cumple=c;
         a->sgt=NULL;    //El siguiente de "a" es nulo, pues está solo en la cola.
         f=a;i=f;        //El final es A, y el principio también pues está solo en la cola
-    }else{
+    }else{          //YA HAY ALGO EN LA COLA
         box *a= new box;
         f->sgt=a;
         a->name=d;

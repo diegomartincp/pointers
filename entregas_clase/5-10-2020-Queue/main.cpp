@@ -19,13 +19,13 @@ box *i,*f=NULL; //Creamos el inicio, el final y el auxiliar.
 box *a;
 
 void eQ(char d, int b, date c){ //Método para encolar
-    if(f==NULL){
-        box *a=new box;
-        a->name=d;
+    if(f==NULL){    //NO HAY NADA EN LA COLA
+        box *a=new box; //Asignamos espacio de memoria al puntero a
+        a->name=d;      //rellenamos el nombre (char), expediente (int) y el cumpleaños (date)
         a->exp=b;
         a->cumple=c;
-        a->sgt=NULL;
-        f=a;i=f;
+        a->sgt=NULL;    //El siguiente de "a" es nulo, pues está solo en la cola.
+        f=a;i=f;        //El final es A, y el principio también pues está solo en la cola
     }else{
         box *a= new box;
         f->sgt=a;

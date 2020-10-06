@@ -1,17 +1,19 @@
 #include <iostream>
 using namespace std;
 
+
+struct date{
+    int dia;
+    int mes;
+    int ano;
+};
 struct box {
     char name;
     int exp;
     date cumple;
     box *sgt;
 };
-struct date{
-    int dia;
-    int mes;
-    int ano;
-};
+
 
 box *i,*f=NULL;
 box *a;
@@ -21,15 +23,15 @@ void eQ(char d, int b, date c){
         box *a=new box;
         a->name=d;
         a->exp=b;
-        a->date=c;
+        a->cumple=c;
         a->sgt=NULL;
         f=a;i=f;
     }else{
        box *a= new box;
-       f->sgt=d;
-       a->name=a;
+       f->sgt=a;
+       a->name=d;
        a->exp=b;
-       a->date=c;
+       a->cumple=c;
        a->sgt=NULL;
        f=a;
     }
@@ -54,17 +56,24 @@ void prt() {
         cout << "Vacia nada que imprimir";
     else
         while (a != NULL)
-            cout << a->v << " -> ", a = a->sgt;
+            cout << a->name << " -> ", a = a->sgt;
 }
 int main(){
-    int op, x;
+    int op, b;
+    char d;
+    date c;
     do{
         cout<<"\n(1) Push    (2) Pop    (3) Print   (4) Salir \n ";
         cout<<"\n Elija ppcion  ?: ",cin>>op;
         switch (op){
             case 1:
-                cout<<"Ingresa el valor a insertar en el Stack : ??  ",cin>>x;
-                eQ(x);
+                cout<<"Ingresa el valor del nombre a insertar en el Stack : ??  ",cin>>d;
+                cout<<"Ingresa el valor a del expediente insertar en el Stack : ??  ",cin>>b;
+                cout<<"Ingresa el valor del día a insertar en el Stack : ??  ",cin>>c.dia;
+                cout<<"Ingresa el valor del mes a insertar en el Stack : ??  ",cin>>c.mes;
+                cout<<"Ingresa el valor del año a insertar en el Stack : ??  ",cin>>c.ano;
+                
+                eQ(d,b,c);
                 break;
             case 2:
                 cout<<"Eliminando ..... : ";

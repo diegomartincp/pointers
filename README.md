@@ -1,4 +1,4 @@
 # pointers
 Uso de punteros en C++
-Repo para subir los ejemplos de código sobre punteros
+Repo para subir los códigos hechos en clase y las actividades
 

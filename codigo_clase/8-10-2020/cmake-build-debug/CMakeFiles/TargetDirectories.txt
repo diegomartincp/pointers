@@ -1,0 +1,3 @@
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/8-10-2020/cmake-build-debug/CMakeFiles/8_10_2020.dir
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/8-10-2020/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/8-10-2020/cmake-build-debug/CMakeFiles/rebuild_cache.dir

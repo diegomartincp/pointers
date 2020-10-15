@@ -1,0 +1,3 @@
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/invertr_ll/cmake-build-debug/CMakeFiles/invertr_ll.dir
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/invertr_ll/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diegomartinc/CLionProjects/pointers/codigo_clase/invertr_ll/cmake-build-debug/CMakeFiles/rebuild_cache.dir
